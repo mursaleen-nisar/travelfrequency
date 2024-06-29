@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Frequency</title>
+
+    <!-- Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-white text-black font-poppins">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed w-full z-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex justify-center items-center space-x-6 lg:space-x-10">
+                        <div>
+                            <a href="#" class="flex items-center p-3 text-gray-700">
+                                <img src="./images/logo.png" alt="logo" class="w-28">
+                            </a>
+                        </div>
+
+                        <ul class="flex flex-col md:items-center bg-white md:bg-transparent w-full md:w-fit h-screen md:h-fit md:flex-row gap-7 md:gap-5 lg:gap-7 cursor-pointer absolute top-0 right-[-100vw] md:right-0 font-bold md:font-normal px-10 md:px-0 py-24 md:py-0 md:relative text-3xl md:text-base lg:text-lg">
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">Home</li></a>
+                            <a href="#tours"><li class="tours-btn lg:hover:text-blue-500 transition-colors">Packages</li></a>
+                            <a href="#testimonials"><li class="testimonials-btn lg:hover:text-blue-500 transition-colors">Testimonials</li></a>
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">About Us</li></a>
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">Contact</li></a>
+                            <a href="#contact" class="inquiry-btn bg-teal-600 text-white px-7 py-5 font-semibold rounded-lg text-base hover:bg-teal-500 transition-all w-fit md:hidden">Enquiry Now</a>
+        
+                            <div class="socials md:hidden absolute bottom-24 left-1/2 transform -translate-x-1/2 text-center">
+                                <h3 class="border-b border-teal-700 pb-3 text-3xl font-bold mb-3">Follow Us</h3>
+                                <div class="flex">
+                                    <a href="https://wa.me/[??]?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-whatsapp-line text-2xl"></i></a>
+                                    <a href="https://www.instagram.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-instagram-line text-2xl"></i></a>
+                                    <a href="https://www.facebook.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-facebook-line text-2xl"></i></a>
+                                    <a href="https://x.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-twitter-line text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                        <i class="ri-menu-3-line hamburger absolute md:hidden text-3xl right-6 top-5"></i>
+                        <i class="ri-close-line cross hidden absolute md:hidden text-4xl right-6 top-5"></i>
+                    </div>
+
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#contact" class="px-2 py-3 lg:py-3 lg:px-4 bg-teal-600 text-white rounded-md hover:bg-teal-500 transition-colors font-medium">Enquiry Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-4 pt-12">
+            <!-- Title and subtitle -->
+            <section class="my-24 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Group Tour Package for Adventure and Culture Enthusiasts</h1>
+                <p class="text-lg md:text-xl text-gray-700 mt-4">Embark on an exciting journey through the Kashmir Valley with fellow adventurers and culture lovers on this Kashmir tour</p>
+            </section>
+    
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-4xl text-blue-600 font-semibold mb-2">Duration</h2>
+                    <p class="text-gray-600">5 Nights / 6 Days</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h2 class="text-4xl text-blue-600 font-semibold mb-2">Budget</h2>
+                    <p class="text-gray-600">INR 21,499 per person</p>
+                </div>
+            </div>
+    
+            <!-- Package details -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <!-- Image -->
+                <div class="md:col-span-1 h-96 overflow-hidden rounded-lg shadow-lg">
+                    <img src="./images/card-3-info.jpg" alt="Kashmir Valley" class="w-full h-full object-cover object-bottom">
+                </div>
+                <!-- Description -->
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-4">Package Details</h2>
+                    <p class="text-gray-700 leading-relaxed">Join a group of like-minded adventure and culture enthusiasts on an exhilarating Kashmir tour of the Kashmir Valley. This package includes:</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700">
+                        <li>Accommodation in comfortable hotels</li>
+                        <li>Daily breakfast and dinner</li>
+                        <li>Sightseeing tours to key attractions</li>
+                        <li>Shikara ride on Dal Lake</li>
+                        <li>Visit to the Mughal Gardens</li>
+                        <li>Excursion to Gulmarg, Pahalgam and Sonmarg</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <!-- Itinerary -->
+            <section class="mb-20">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 mb-4 text-center">Itinerary</h2>
+                <div class="space-y-8">
+                    <!-- Day 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 1: Arrival in Srinagar</h3>
+                        <p class="text-gray-700 leading-relaxed">Arrive in Srinagar and transfer to your hotel. Spend the day at leisure, exploring the local markets and enjoying the serene beauty of Dal Lake on your Kashmir tour.</p>
+                    </div>
+                    <!-- Day 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 2: Srinagar Sightseeing</h3>
+                        <p class="text-gray-700 leading-relaxed">Visit the Mughal Gardens, Shankaracharya Temple, and enjoy a group Shikara ride on Dal Lake during your Kashmir tour.</p>
+                    </div>
+                    <!-- Day 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 3: Excursion to Gulmarg</h3>
+                        <p class="text-gray-700 leading-relaxed">Take a full-day excursion to Gulmarg, known for its stunning landscapes and winter sports. Return to Srinagar in the evening during your Kashmir tour.</p>
+                    </div>
+                    <!-- Day 4 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 4: Excursion to Pahalgam</h3>
+                        <p class="text-gray-700 leading-relaxed">Explore the breathtaking beauty of Pahalgam, ideal for adventure activities and scenic walks. Return to Srinagar in the evening during your Kashmir tour.</p>
+                    </div>
+                    <!-- Day 5 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 5: Excursion to Sonmarg</h3>
+                        <p class="text-gray-700 leading-relaxed">Enjoy a day trip to Sonmarg, known for its beautiful meadows and trekking opportunities. Return to Srinagar in the evening during your Kashmir tour.</p>
+                    </div>
+                    <!-- Day 6 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Day 6: Departure</h3>
+                        <p class="text-gray-700 leading-relaxed">After breakfast, transfer to Srinagar Airport for your onward journey. Cherish the memories of this adventurous and cultural Kashmir tour.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Inclusions and Exclusions -->
+            <section class="mb-20">
+                <h2 class="text-4xl md:text-5xl font-semibold text-gray-900 mb-4 text-center">Inclusions and Exclusions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Inclusions -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Inclusions</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Accommodation in comfortable hotels</li>
+                            <li>Daily breakfast and dinner</li>
+                            <li>Airport transfers</li>
+                            <li>All sightseeing tours</li>
+                            <li>Shikara ride on Dal Lake</li>
+                        </ul>
+                    </div>
+                    <!-- Exclusions -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-4">Exclusions</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Airfare</li>
+                            <li>Lunches</li>
+                            <li>Personal expenses</li>
+                            <li>Travel insurance</li>
+                            <li>Anything not mentioned in inclusions</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="bg-blue-600 text-white p-6 rounded-lg mt-8 flex flex-col items-center justify-center text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-2">Contact Us to Book This Package</h3>
+                <p class="mb-8">Ready to experience the romance of a Kashmir tour? Get in touch with us to book your package today!</p>
+                <p class="block mb-2 w-full overflow-hidden text-ellipsis md:text-xl"><strong>Phone:</strong> <a href="tel:+919622044770" class="hover:underline">+91 96220 44770</a></p>
+                <p class="block mb-2 w-full overflow-hidden text-ellipsis md:text-xl"><strong>Email:</strong> <a href="mailto:info@travelfrequency.com" class="hover:underline">info@travelfrequency.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Blue Waves -->
+    <img src="./images/blue-waves.svg" alt="waves" class="w-full translate-y-1">
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white pt-8 lg:px-6">
+        <div class="container mx-auto px-4 min-h-[60vh] flex flex-col justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 gap-x-16 md:gap-10 lg:gap-x-10 py-12">
+            <!-- Column 1 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Travel Frequency</h3>
+            <p class="text-sm text-gray-300">Travel Frequency, based in Kashmir, offers unparalleled travel experiences and exceptional tour packages, especially Kashmir tour packages to explore the beauty of the region.</p>
+            </div>
+            <!-- Column 2 -->
+            <div class="lg:pl-4">
+            <h3 class="text-2xl font-bold mb-4">Services</h3>
+            <ul class="text-gray-300">
+                <li class="mb-2"><a class="hover:underline">Flight Booking</a></li>
+                <li class="mb-2"><a class="hover:underline">Travel Planning</a></li>
+                <li class="mb-2"><a class="hover:underline">Tour Packages</a></li>
+                <li class="mb-2"><a class="hover:underline">Hotel Reservation</a></li>
+                <li class="mb-2"><a class="hover:underline">Kashmir Tour Packages</a></li>
+            </ul>
+            </div>
+            <!-- Column 3 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p class="text-gray-300 mb-2 overflow-hidden text-ellipsis">
+                <strong class="text-white">Email:</strong> 
+                <a href="mailto:info@travelfrequency.com" class="hover:underline">info@travelfrequency.com</a>
+            </p>                
+            <p class="text-gray-300 mb-2">
+                <strong class="text-white">Phone:</strong> 
+                <a href="tel:+917006339495" class="hover:underline">+91 12345 67890</a> / 
+                <a href="tel:+916005958811" class="hover:underline">+91 09876 54321</a>
+            </p>
+            <p class="text-gray-300 mb-2"><strong class="text-white">Address:</strong> Unknown Complex, St., Pattan, Jammu and Kashmir 193121</p>
+            </div>
+            <!-- Column 4 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+            <div class="flex">
+                <a href="https://wa.me/917006339495?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-whatsapp-line text-xl"></i></a>
+                <a href="https://www.instagram.com/alahraamtourandtravel/" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-instagram-line text-xl"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556457325613" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-facebook-line text-xl"></i></a>
+                <a href="https://x.com/AL_AHRAAM_TOUR_" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-twitter-line text-xl"></i></a>
+            </div>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="copyright-section bg-blue-700 py-4 mt-8 border-t border-blue-300">
+            <div class="container mx-auto px-4 text-center flex flex-col md:flex-row justify-center gap-2">
+                <p class="text-sm">&copy; 2024 Travel Frequency | All rights reserved.</p>
+                <p class="text-sm">Designed and developed by <a href="https://www.mursaleennisar.com" target="_blank" class="underline lg:hover:text-green-200 transition-colors ">Mursaleen Nisar</a></p>
+            </div>
+        </div>
+
+
+        </div>
+    </footer>
+
+    <!-- GSAP Animation CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>

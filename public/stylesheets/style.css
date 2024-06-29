@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.hero-container {
+    background-image: url(./images/hero-bg.jpg);
+}
+
+.hero-container h1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+.hero-container p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hero-container a {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+section > div > div > :is(h2, p) > span {
+    display: inline-block;
+}
+
+p {
+    overflow: hidden;
+}
+
+h2 {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 639px) {
+    .swiper-button-prev::after {
+        display: none;
+    }
+    .swiper-button-next::after {
+        display: none;
+    }
+}

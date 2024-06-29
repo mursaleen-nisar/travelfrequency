@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Frequency</title>
+
+    <!-- Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- SwiperCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-white text-black font-poppins">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed w-full z-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex justify-center items-center space-x-6 lg:space-x-10">
+                        <div>
+                            <a href="#" class="flex items-center p-3 text-gray-700">
+                                <img src="./images/logo.png" alt="logo" class="w-28">
+                            </a>
+                        </div>
+
+                        <ul class="flex flex-col md:items-center bg-white md:bg-transparent w-full md:w-fit h-screen md:h-fit md:flex-row gap-7 md:gap-5 lg:gap-7 cursor-pointer absolute top-0 right-[-100vw] md:right-0 font-bold md:font-normal px-10 md:px-0 py-24 md:py-0 md:relative text-3xl md:text-base lg:text-lg">
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">Home</li></a>
+                            <a href="#tours"><li class="tours-btn lg:hover:text-blue-500 transition-colors">Packages</li></a>
+                            <a href="#testimonials"><li class="testimonials-btn lg:hover:text-blue-500 transition-colors">Testimonials</li></a>
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">About Us</li></a>
+                            <a href="#"><li class="lg:hover:text-blue-500 transition-colors">Contact</li></a>
+                            <a href="#contact" class="inquiry-btn bg-teal-600 text-white px-7 py-5 font-semibold rounded-lg text-base hover:bg-teal-500 transition-all w-fit md:hidden">Enquiry Now</a>
+        
+                            <div class="socials md:hidden absolute bottom-24 left-1/2 transform -translate-x-1/2 text-center">
+                                <h3 class="border-b border-teal-700 pb-3 text-3xl font-bold mb-3">Follow Us</h3>
+                                <div class="flex">
+                                    <a href="https://wa.me/[??]?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-whatsapp-line text-2xl"></i></a>
+                                    <a href="https://www.instagram.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-instagram-line text-2xl"></i></a>
+                                    <a href="https://www.facebook.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-facebook-line text-2xl"></i></a>
+                                    <a href="https://x.com/[??]" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-twitter-line text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                        <i class="ri-menu-3-line hamburger absolute md:hidden text-3xl right-6 top-5"></i>
+                        <i class="ri-close-line cross hidden absolute md:hidden text-4xl right-6 top-5"></i>
+                    </div>
+
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#contact" class="px-2 py-3 lg:py-3 lg:px-4 bg-teal-600 text-white rounded-md hover:bg-teal-500 transition-colors font-medium">Enquiry Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-container bg-cover bg-center h-screen"">
+            <div class="flex items-center justify-left h-full bg-gray-900 bg-opacity-30">
+                <div class="hero-content ml-5 sm:m-12 md:m-20 lg:m-32 p-4 sm:p-8 border-l-8 border-blue-200 rounded-md w-full md:w-3/4 lg:w-2/3 overflow-hidden">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-white mb-3 md:mb-5">Explore Kashmir with Us</h1>
+                    <p class="text-lg lg:text-xl text-white mb-12 leading-6">Explore the hidden gems and breathtaking valleys of Kashmir with our exclusive tour packages. Experience the beauty of this paradise on Earth. Book your unforgettable Kashmir tour with us today!</p>
+                    <a href="#" class="py-3 px-5 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-500 transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tours & Packages Section -->
+        <section id="tours" class="py-24 min-h-[95vh] scroll-mt-5">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2>Tours & Packages</h2>
+                    <p class="text-gray-700 mt-2"><span>Explore our exclusive tour packages</span></p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 place-items-center">
+                    <!-- Package 1 -->
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <div class="img-container h-60 w-full overflow-hidden rounded-t-lg">
+                                <img class="object-cover object-center w-full h-full" src="./images/card-1.jpg" alt="card image" />
+                            </div>
+                        </a>
+                        <div class="px-5 pb-5 pt-2">
+                            <small class="text-gray-700">5 Nights 6 Days</small>
+                            <a href="#">
+                                <h5 class="my-3 text-xl font-bold tracking-tight text-gray-900">Lost In Love: A Romantic Escapade To The Enchanting Kashmir Valley</h5>
+                            </a>
+                            <h4 class="text-xl md:text-2xl font-medium mb-2 text-gray-600">₹ 21,499 <small class="text-gray-600">/ Person</small></h4>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Package 2 -->
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <div class="img-container h-60 w-full overflow-hidden rounded-t-lg">
+                                <img class="object-cover object-center w-full h-full" src="./images/card-2.jpg" alt="card image" />
+                            </div>
+                        </a>
+                        <div class="px-5 pb-5 pt-2">
+                            <small class="text-gray-700">4 Nights 5 Days</small>
+                            <a href="#">
+                                <h5 class="my-3 text-xl font-bold tracking-tight text-gray-900">Discover The Magic Of Kashmir: A Memorable Family Getaway</h5>
+                            </a>
+                            <h4 class="text-xl md:text-2xl font-medium mb-2 text-gray-600">₹ 18,499 <small class="text-gray-600">/ Person</small></h4>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Package 3 -->
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                        <a href="#">
+                            <div class="img-container h-60 w-full overflow-hidden rounded-t-lg">
+                                <img class="object-cover object-center w-full h-full" src="./images/card-3.jpg" alt="card image" />
+                            </div>
+                        </a>
+                        <div class="px-5 pb-5 pt-2">
+                            <small class="text-gray-700">5 Nights 6 Days</small>
+                            <a href="#">
+                                <h5 class="my-3 text-xl font-bold tracking-tight text-gray-900">Group Tour Package For Adventure And Culture Enthusiasts</h5>
+                            </a>
+                            <h4 class="text-xl md:text-2xl font-medium mb-2 text-gray-600">₹ 21,499 <small class="text-gray-600">/ Person</small></h4>
+                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                                Read more
+                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="bg-gray-100 py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2>Our Services</h2>
+                    <p class="text-gray-700 mt-2"><span>We offer a variety of travel services to cater to your needs</span></p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-white rounded-xl shadow-lg p-6 md:min-h-[21rem] lg:min-h-64">
+                            <div class="mb-4">
+                                <i class="ri-taxi-fill text-5xl text-blue-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Personalized Tours</h3>
+                            <p class="text-gray-700">We create personalized tour packages tailored to your preferences and budget.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-white rounded-xl shadow-lg p-6 md:min-h-[21rem] lg:min-h-64">
+                            <div class="mb-4">
+                                <i class="ri-flight-takeoff-fill text-5xl text-blue-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Flight Booking</h3>
+                            <p class="text-gray-700">We offer flight booking services to help you reach your destination comfortably and affordably.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-white rounded-xl shadow-lg p-6 md:min-h-[21rem] lg:min-h-64">
+                            <div class="mb-4">
+                                <i class="ri-hotel-fill text-5xl text-blue-500"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Hotel Reservations</h3>
+                            <p class="text-gray-700">We provide hotel reservation services to ensure you have a comfortable stay during your trip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2>Why Choose Us</h2>
+                    <p class="text-gray-700 mt-2"><span>Discover the reasons why we are the best choice for your travel needs</span></p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-gray-100 rounded-xl shadow-lg p-6 text-center md:min-h-[22.5rem] lg:min-h-72 xl:min-h-fit flex flex-col justify-center">
+                            <div class="mb-4">
+                                <i class="ri-search-line text-5xl text-blue-500 mx-auto"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Local Insights</h3>
+                            <p class="text-gray-700">Get insider tips and discover hidden gems with our extensive local expertise and insights.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-gray-100 rounded-xl shadow-lg p-6 text-center md:min-h-[22.5rem] lg:min-h-72 xl:min-h-fit flex flex-col justify-center">
+                            <div class="mb-4">
+                                <i class="ri-money-rupee-circle-fill text-5xl text-blue-500 mx-auto"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Affordable Pricing</h3>
+                            <p class="text-gray-700">We offer competitive pricing without compromising on quality, ensuring great value for your money.</p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 px-4 mb-8">
+                        <div class="bg-gray-100 rounded-xl shadow-lg p-6 text-center md:min-h-[22.5rem] lg:min-h-72 xl:min-h-fit flex flex-col justify-center">
+                            <div class="mb-4">
+                                <i class="ri-thumb-up-fill text-5xl text-blue-500 mx-auto"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4">Customer Satisfaction</h3>
+                            <p class="text-gray-700">We prioritize customer satisfaction, ensuring a hassle-free and enjoyable travel experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Destinations Section -->
+        <section id="destinations" class="py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2>Popular Destinations</h2>
+                    <p class="text-gray-700 mt-2"><span>Explore our most popular travel destinations</span></p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8">
+                    <div class="bg-white rounded shadow-lg overflow-hidden mx-4">
+                        <img src="./images/Gulmarg.jpg" alt="Gulmarg" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-4">Gulmarg, Kashmir</h3>
+                            <p class="text-gray-700">Gulmarg is a scenic paradise nestled amidst Kashmir's stunning mountains.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-lg overflow-hidden mx-4">
+                        <img src="./images/Srinagar.jpg" alt="Srinagar" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-4">Srinagar, Kashmir</h3>
+                            <p class="text-gray-700">Srinagar, the cultural hub of Kashmir, known for its historical landmarks.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-lg overflow-hidden mx-4">
+                        <img src="./images/Pahalgam.jpg" alt="Pahalgam" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-4">Pahalgam, Kashmir</h3>
+                            <p class="text-gray-700">Pahalgam is a tranquil paradise amidst Kashmir's stunning natural beauty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="bg-gray-100 py-20 scroll-mt-7 md:scroll-mt-12">
+            <div class="swiper max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2>Testimonials</h2>
+                    <p class="text-gray-700 mt-2"><span>Hear from our happy clients</span></p>
+                </div>
+                
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium mb-5">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide px-4 sm:px-16 overflow-hidden min-h-[40vw] sm:min-h-[20vw] flex flex-col items-center gap-12">
+                        <div class="img-container bg-yellow-500 h-[14vw] w-[14vw] sm:h-[11vw] sm:w-[11vw] md:h-[8vw] md:w-[8vw] rounded-full overflow-hidden">
+                            <img src="./images/default-profile.png" alt="Customer Image" class="h-full w-full object-cover">
+                        </div>
+                        <div class="review">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, maiores nulla. Nemo, tenetur distinctio et eum, quis aperiam veritatis deleniti error, soluta illum ipsa. Voluptates, veritatis enim. Nemo libero doloribus quaerat? Perferendis vel similique placeat libero natus quas quisquam assumenda!</p>
+                        </div>
+                        <div class="name">
+                            <h2 class="text-2xl font-medium">~Mursaleen Nisar</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Swiper Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </section>
+
+        <!-- Seasonal Highlights Section -->
+        <section id="seasonal-highlights" class="py-20 ">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2>Seasonal Highlights in Kashmir</h2>
+                    <p class="text-gray-700 mt-2"><span>Discover the beauty of Kashmir in every season</span></p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-4">
+                    <!-- Spring Card -->
+                    <div class="bg-white rounded shadow-lg overflow-hidden">
+                        <img src="./images/Spring.jpg" alt="Spring in Kashmir" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-center">Spring</h3>
+                        </div>
+                    </div>
+                    <!-- Summer Card -->
+                    <div class="bg-white rounded shadow-lg overflow-hidden">
+                        <img src="./images/Summer.jpg" alt="Summer in Kashmir" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-center">Summer</h3>
+                        </div>
+                    </div>
+                    <!-- Autumn Card -->
+                    <div class="bg-white rounded shadow-lg overflow-hidden">
+                        <img src="./images/Autumn.jpg" alt="Autumn in Kashmir" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-center">Autumn</h3>
+                        </div>
+                    </div>
+                    <!-- Winter Card -->
+                    <div class="bg-white rounded shadow-lg overflow-hidden">
+                        <img src="./images/Winter.jpg" alt="Winter in Kashmir" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-center">Winter</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-20 mb-10 md:mb-0 scroll-mt-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2>Get a Free Quote</h2>
+                    <p class="text-gray-700 mt-2"><span>Get in touch with us to plan your next trip</span></p>
+                </div>
+                <div class="w-full max-w-lg mx-auto">
+                    <form action="#" class="mx-3">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your full name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-bold mb-2">Phone Number</label>
+                            <input type="tel" id="phone" pattern="[0-9]{10}" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your phone number" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email ID</label>
+                            <input type="email" id="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email ID (Optional)">
+                        </div>
+                        <div class="mb-4">
+                            <label for="date" class="block text-gray-700 font-bold mb-2">Expected Journey Date</label>
+                            <input type="date" id="date" min="" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="py-2 px-4 mt-6 bg-blue-500 text-white rounded hover:bg-blue-400 w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Blue Waves -->
+    <img src="./images/blue-waves.svg" alt="waves" class="w-full translate-y-1">
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white pt-8 lg:px-6">
+        <div class="container mx-auto px-4 min-h-[60vh] flex flex-col justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 gap-x-16 md:gap-10 lg:gap-x-10 py-12">
+            <!-- Column 1 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Travel Frequency</h3>
+            <p class="text-sm text-gray-300">Travel Frequency, based in Kashmir, offers unparalleled travel experiences and exceptional tour packages, especially Kashmir tour packages to explore the beauty of the region.</p>
+            </div>
+            <!-- Column 2 -->
+            <div class="lg:pl-4">
+            <h3 class="text-2xl font-bold mb-4">Services</h3>
+            <ul class="text-gray-300">
+                <li class="mb-2"><a class="hover:underline">Flight Booking</a></li>
+                <li class="mb-2"><a class="hover:underline">Travel Planning</a></li>
+                <li class="mb-2"><a class="hover:underline">Tour Packages</a></li>
+                <li class="mb-2"><a class="hover:underline">Hotel Reservation</a></li>
+                <li class="mb-2"><a class="hover:underline">Kashmir Tour Packages</a></li>
+            </ul>
+            </div>
+            <!-- Column 3 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p class="text-gray-300 mb-2 overflow-hidden text-ellipsis">
+                <strong class="text-white">Email:</strong> 
+                <a href="mailto:info@travelfrequency.com" class="hover:underline">info@travelfrequency.com</a>
+            </p>                
+            <p class="text-gray-300 mb-2">
+                <strong class="text-white">Phone:</strong> 
+                <a href="tel:+917006339495" class="hover:underline">+91 12345 67890</a> / 
+                <a href="tel:+916005958811" class="hover:underline">+91 09876 54321</a>
+            </p>
+            <p class="text-gray-300 mb-2"><strong class="text-white">Address:</strong> Unknown Complex, St., Pattan, Jammu and Kashmir 193121</p>
+            </div>
+            <!-- Column 4 -->
+            <div>
+            <h3 class="text-2xl font-bold mb-4">Follow Us</h3>
+            <div class="flex">
+                <a href="https://wa.me/917006339495?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-whatsapp-line text-xl"></i></a>
+                <a href="https://www.instagram.com/alahraamtourandtravel/" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-instagram-line text-xl"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61556457325613" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-facebook-line text-xl"></i></a>
+                <a href="https://x.com/AL_AHRAAM_TOUR_" target="_blank" class="rounded-full hover:bg-blue-500 transition-colors h-9 w-9 flex justify-center items-center"><i class="ri-twitter-line text-xl"></i></a>
+            </div>
+            </div>
+        </div>
+        <!-- Copyright Section -->
+        <div class="copyright-section bg-blue-700 py-4 mt-8 border-t border-blue-300">
+            <div class="container mx-auto px-4 text-center flex flex-col md:flex-row justify-center gap-2">
+                <p class="text-sm">&copy; 2024 Travel Frequency | All rights reserved.</p>
+                <p class="text-sm">Designed and developed by <a href="https://www.mursaleennisar.com" target="_blank" class="underline lg:hover:text-green-200 transition-colors ">Mursaleen Nisar</a></p>
+            </div>
+        </div>
+
+
+        </div>
+    </footer>
+
+    <!-- GSAP Animation CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Scroll Trigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- GSAP Animation Script -->
+     <script src="./gsap-animation.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
