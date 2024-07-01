@@ -1,15 +1,13 @@
-import pool from '../config/mysql-connection.js';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+const pool = require('../config/mysql-connection');
+const fs = require('fs');
+const path = require('path');
 
 // Load default image
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const defaultImagePath = path.join(__dirname, '..', 'public', 'images', 'default-profile.png');
 const defaultImage = fs.readFileSync(defaultImagePath);
 
 // Function to create the testimonials table if it doesn't exist
-export const createTestimonialsTable = async () => {
+const createTestimonialsTable = async () => {
     const query = `
         CREATE TABLE IF NOT EXISTS testimonials (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -30,7 +28,7 @@ export const createTestimonialsTable = async () => {
 };
 
 // Function to insert a new testimonial
-export const addTestimonial = async (client_name, client_testimonial, client_image) => {
+const addTestimonial = async (client_name, client_testimonial, client_image) => {
     const query = `
         INSERT INTO testimonials (client_name, client_testimonial, client_image)
         VALUES (?, ?, ?);
@@ -43,4 +41,9 @@ export const addTestimonial = async (client_name, client_testimonial, client_ima
     } catch (err) {
         throw new Error(`Error adding testimonial: ${err.message}`);
     }
+};
+
+module.exports = {
+    addTestimonial,
+    createTestimonialsTable
 };

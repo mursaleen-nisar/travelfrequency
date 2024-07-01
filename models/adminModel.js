@@ -1,4 +1,4 @@
-import pool from '../config/mysql-connection.js';
+const pool = require('../config/mysql-connection');
 
 const createAdminTableQuery = `
     CREATE TABLE IF NOT EXISTS admin (
@@ -21,6 +21,6 @@ const createAdminTable = async () => {
 }
 
 
-export default {
+module.exports = {
     createAdminTable
 };

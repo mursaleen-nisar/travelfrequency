@@ -1,7 +1,6 @@
-import mysql from 'mysql2';
+const mysql = require('mysql2');
 
-import createDebug from 'debug';
-const debug = createDebug("development:mysql");
+const debug = require('debug')("development:mysql");
 
 const pool = mysql.createPool({
     host: process.env.MYSQL_HOST,
@@ -22,4 +21,4 @@ pool.getConnection((err, connection) => {
     }
 });
 
-export default pool.promise();
+module.exports = pool.promise();

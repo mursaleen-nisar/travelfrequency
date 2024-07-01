@@ -1,13 +1,12 @@
-import express from 'express';
+const express = require('express');
 const app = express();
-import ejs from 'ejs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import cookieParser from 'cookie-parser';
-import 'dotenv/config';
-import adminModel from './models/adminModel.js';
-import { createQuoteTable } from './models/getQuoteModel.js';
-import { createTestimonialsTable } from './models/testimonialModel.js';
+const ejs = require('ejs');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+require('dotenv').config();
+const adminModel = require('./models/adminModel');
+const { createQuoteTable } = require('./models/getQuoteModel');
+const { createTestimonialsTable } = require('./models/testimonialModel');
 
 // Create db tables on application startup for first time
 if(process.env.NODE_ENV === 'development') {
@@ -16,14 +15,13 @@ if(process.env.NODE_ENV === 'development') {
     createTestimonialsTable();
 }
 
-import indexRoute from './routes/index.js';
-import cardsRoute from './routes/cardsRouter.js';
-import adminRoute from './routes/adminRouter.js';
-import error404NotFound from './middlewares/404Error.js';
+const indexRoute = require('./routes/index');
+const cardsRoute = require('./routes/cardsRouter');
+const adminRoute = require('./routes/adminRouter');
+const error404NotFound = require('./middlewares/404Error');
 
 
 app.set('view engine', 'ejs');
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

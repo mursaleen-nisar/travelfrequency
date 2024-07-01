@@ -1,8 +1,8 @@
-import express from 'express';
+const express = require('express');
 const router = express.Router();
-import pool from '../config/mysql-connection.js';
-import { addQuoteRequest } from '../models/getQuoteModel.js';
-import nodemailer from "nodemailer";
+const pool = require('../config/mysql-connection');
+const { addQuoteRequest } = require('../models/getQuoteModel');
+const nodemailer = require('nodemailer');
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -75,4 +75,4 @@ router.post('/get-quote', async (req, res) => {
 });
 
 
-export default router;
+module.exports = router;

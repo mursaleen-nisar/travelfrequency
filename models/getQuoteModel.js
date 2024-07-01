@@ -1,7 +1,7 @@
-import pool from '../config/mysql-connection.js';
+const pool = require('../config/mysql-connection');
 
 // Function to create the getQuote table if it doesn't exist
-export const createQuoteTable = async () => {
+const createQuoteTable = async () => {
     const query = `
         CREATE TABLE IF NOT EXISTS getQuote (
             id INT AUTO_INCREMENT PRIMARY KEY,
@@ -23,7 +23,7 @@ export const createQuoteTable = async () => {
 };
 
 // Function to insert a new quote request
-export const addQuoteRequest = async (full_name, phone_number, email, journey_date) => {
+const addQuoteRequest = async (full_name, phone_number, email, journey_date) => {
     
     const query = `
     INSERT INTO getQuote (full_name, phone_number, email, journey_date)
@@ -36,4 +36,9 @@ export const addQuoteRequest = async (full_name, phone_number, email, journey_da
     } catch (err) {
         throw new Error(`Error adding quote request: ${err.message}`);
     }
+};
+
+module.exports = {
+    addQuoteRequest,
+    createQuoteTable
 };

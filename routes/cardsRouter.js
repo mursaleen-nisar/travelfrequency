@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 const router = express.Router();
 
 router.get('/kashmirtour-1-info', (req, res) => {
@@ -13,4 +13,4 @@ router.get('/kashmirtour-3-info', (req, res) => {
     res.render('card-3-info', { title: 'Package 3 Information', page: 'card-3-info' });
 });
 
-export default router;
+module.exports = router;

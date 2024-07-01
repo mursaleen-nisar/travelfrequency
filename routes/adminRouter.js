@@ -1,12 +1,12 @@
-import express from 'express';
+const express = require('express');
 const router = express.Router();
-import { comparePassword } from '../middlewares/comparePassword.js';
-import { postRegister, postLogin } from '../controllers/authController.js';
-import isLoggedIn from '../middlewares/isLoggedIn.js';
-import jwt from 'jsonwebtoken';
-import pool from '../config/mysql-connection.js';
-import { addTestimonial } from '../models/testimonialModel.js';
-import upload from '../middlewares/multerUpload.js';
+const { comparePassword } = require('../middlewares/comparePassword');
+const { postRegister, postLogin } = require('../controllers/authController');
+const isLoggedIn = require('../middlewares/isLoggedIn');
+const jwt = require('jsonwebtoken');
+const pool = require('../config/mysql-connection');
+const { addTestimonial } = require('../models/testimonialModel');
+const upload = require('../middlewares/multerUpload');
 
 
 if(process.env.NODE_ENV === 'development') {
@@ -61,4 +61,4 @@ router.post('/add-testimonial', upload.single('client_image'), async (req, res) 
     }
 });
 
-export default router;
+module.exports = router;

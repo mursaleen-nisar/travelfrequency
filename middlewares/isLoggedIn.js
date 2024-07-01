@@ -1,7 +1,7 @@
-import jwt from 'jsonwebtoken';
-import pool from '../config/mysql-connection.js';
+const jwt = require('jsonwebtoken');
+const pool = require('../config/mysql-connection');
 
-export default async (req, res, next) => {
+module.exports = async (req, res, next) => {
     if(!req.cookies.token) {
         return res.redirect('/admin/login');
     }

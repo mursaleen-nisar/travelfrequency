@@ -1,8 +1,8 @@
-import pool from '../config/mysql-connection.js';
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
+const pool = require('../config/mysql-connection');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
-export const postRegister = async (req, res) => {
+module.exports.postRegister = async (req, res) => {
     const { name, email, password } = req.body;
     try {
         bcrypt.genSalt(10, function(err, salt) {
@@ -20,7 +20,7 @@ export const postRegister = async (req, res) => {
     }
 }
 
-export const postLogin = async (req, res) => {
+module.exports.postLogin = async (req, res) => {
     const { email, password } = req.body;
 
     try {
