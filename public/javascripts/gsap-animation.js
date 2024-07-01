@@ -21,6 +21,17 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 1.5
     });
 
+    gsap.from('.whatsapp-fixed', {
+        opacity: 0,
+        display: 'none',
+        scrollTrigger: {
+            trigger: '.whatsapp-fixed',
+            scroller: 'body',
+            scrub: 2,
+            start: 'top 60%'
+        }
+    });
+
     // GSAP Text Animation
     function textAnimation(element) {
         const elem = document.querySelector(element);

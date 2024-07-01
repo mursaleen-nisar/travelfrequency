@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Frequency <% if(page !== 'index') { %>
+        - <%= title %>
+    <% } %></title>
+
+    <!-- Poppins Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <% if(page === 'index') { %>
+        
+        <!-- SwiperCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <% } %>
+
+    <link rel="stylesheet" href="/stylesheets/output.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    <meta name="apple-mobile-web-app-title" content="Kashmir">
+    <meta name="application-name" content="Kashmir">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Explore the best Kashmir tour packages with Travel Frequency. Discover hidden gems, beautiful places, and enjoy a memorable trip to Kashmir.">
+    <meta name="keywords" content="Kashmir tour, Kashmir trip, Kashmir tourism, Travel Frequency, Kashmir tour packages, Kashmir travel, hidden places in Kashmir, best Kashmir tours">
+    <meta property="og:title" content="Best Kashmir Tour Packages | Travel Frequency">
+    <meta property="og:description" content="Explore the best Kashmir tour packages with Travel Frequency. Discover hidden gems, beautiful places, and enjoy a memorable trip to Kashmir.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://travelfrequency.com">
+    <meta property="og:image" content="https://travelfrequency.com/images/card-3-info.jpg">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Kashmir Tour Packages | Travel Frequency">
+    <meta name="twitter:description" content="Explore the best Kashmir tour packages with Travel Frequency. Discover hidden gems, beautiful places, and enjoy a memorable trip to Kashmir.">
+    <meta name="twitter:image" content="https://travelfrequency.com/images/card-3-info.jpg">
+
+</head>
+<body class="bg-white text-black font-poppins" data-page="<%= page %>">
+
+    <header>
+        <!-- Navbar -->
+        <nav class="bg-white shadow-xl fixed w-full z-10">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex justify-center items-center space-x-6 lg:space-x-10">
+                        <div>
+                            <a href="/" class="flex items-center p-3 text-gray-700">
+                                <img src="/images/logo.png" alt="logo" class="w-28">
+                            </a>
+                        </div>
+
+                        <ul class="flex flex-col md:items-center bg-white md:bg-transparent w-full md:w-fit h-screen md:h-fit md:flex-row gap-7 md:gap-5 lg:gap-7 cursor-pointer absolute top-0 right-[-100vw] md:right-0 font-bold md:font-normal px-10 md:px-0 py-24 md:py-0 md:relative text-3xl md:text-base lg:text-lg">
+                            <a href="/"><li class="lg:hover:text-blue-500 transition-colors">Home</li></a>
+                            <a href="/#tours"><li class="tours-btn lg:hover:text-blue-500 transition-colors">Packages</li></a>
+                            <a href="/#testimonials"><li class="testimonials-btn lg:hover:text-blue-500 transition-colors">Testimonials</li></a>
+                            <a href="/about"><li class="lg:hover:text-blue-500 transition-colors">About Us</li></a>
+                            <a href="/contact"><li class="lg:hover:text-blue-500 transition-colors">Contact</li></a>
+                            <a href="/#contact" class="inquiry-btn bg-teal-600 text-white px-7 py-5 font-semibold rounded-lg text-base hover:bg-teal-500 transition-all w-fit md:hidden">Enquiry Now</a>
+        
+                            <div class="socials md:hidden absolute bottom-24 left-1/2 transform -translate-x-1/2 text-center">
+                                <h3 class="border-b border-teal-700 pb-3 text-3xl font-bold mb-3">Follow Us</h3>
+                                <div class="flex">
+                                    <a href="https://wa.me/919622044770?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-whatsapp-line text-2xl"></i></a>
+                                    <a href="https://www.instagram.com/travelfrequency2024" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-instagram-line text-2xl"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61561172919908&mibextid=ZbWKwL" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-facebook-line text-2xl"></i></a>
+                                    <a href="https://x.com/TravelFrequency" target="_blank" class="rounded-full hover:bg-blue-400 transition-colors h-12 w-12 flex justify-center items-center"><i class="ri-twitter-line text-2xl"></i></a>
+                                </div>
+                            </div>
+                        </ul>
+                        <i class="ri-menu-3-line hamburger absolute md:hidden text-3xl right-6 top-5"></i>
+                        <i class="ri-close-line cross hidden absolute md:hidden text-4xl right-6 top-5"></i>
+                    </div>
+
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="/#contact" class="px-2 py-3 lg:py-3 lg:px-4 bg-teal-600 text-white rounded-md hover:bg-teal-500 transition-colors font-medium">Enquiry Now</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fixed WhatsApp call to action -->
+        <a href="https://wa.me/919622044770?text=I%20want%20to%20make%20a%20trip%20with%20your%20agency." target="_blank" class="whatsapp-fixed fixed z-10 bottom-20 left-0 w-16 h-16 bg-green-500 flex justify-center items-center rounded-full cursor-pointer hover:scale-110 transition-transform text-white">
+            <i class="ri-whatsapp-line text-4xl"></i>
+        </a>
+    </header>
